@@ -1,0 +1,25 @@
+[project]
+name = "hexlet-code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bebra228pro", email = "microsoftvladislav99@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["brain_games"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
+]
