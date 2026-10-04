@@ -21,3 +21,6 @@ check: test lint
 
 build:
 	uv build
+
+brain-games:
+	uv run brain-games
