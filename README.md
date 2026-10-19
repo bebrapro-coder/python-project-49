@@ -42,3 +42,7 @@ cd python-project-49
 ### Brain-even
 
 https://asciinema.org/a/VEU7Szc4HDIBETnw
+
+### Brain-calc
+
+https://asciinema.org/a/YeDn4S9YFUhmuqKF 
