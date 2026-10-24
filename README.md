@@ -7,9 +7,33 @@
 Учебный проект Хекслета: https://ru.hexlet.io/programs/python
 Как это должно работать: https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
 
+## Описание проекта
+
+«Игры разума» — набор из пяти консольных мини-игр на сообразительность.
+Каждая игра задаёт три вопроса подряд: чтобы победить, нужно ответить
+верно на все три. Первая же ошибка заканчивает игру.
+
+| Команда | Задача игрока |
+|---|---|
+| `brain-even` | определить, чётное ли число |
+| `brain-calc` | посчитать арифметическое выражение |
+| `brain-gcd` | найти наибольший общий делитель двух чисел |
+| `brain-progression` | найти пропущенное число в арифметической прогрессии |
+| `brain-prime` | определить, простое ли число |
+
+Проект выполнен в рамках курса Python от [Хекслета](https://ru.hexlet.io/programs/python).
+
+## Минимальные требования
+
+- Python 3.12+
+- [uv] https://docs.astral.sh/uv/getting-started/installation/
+- Git
+- Make(опционально)
+- Linux, macOS или Windows через WSL
+
 ## Стек
 
-- Python 3.14
+- Python 3.12+
 - uv
 - Ruff
 - Make
@@ -48,6 +72,10 @@ brain-games/brain-even/brain-calc/brain-gcd/brain-progression/brain-prime
 [Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.
 
 ## Демонстрация
+
+### Brain-games
+
+https://asciinema.org/a/gi8NqW46kawLRBg5
 
 ### Brain-even
 
