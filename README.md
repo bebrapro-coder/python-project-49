@@ -46,3 +46,15 @@ https://asciinema.org/a/VEU7Szc4HDIBETnw
 ### Brain-calc
 
 https://asciinema.org/a/YeDn4S9YFUhmuqKF 
+
+### Brain-gcd
+
+https://asciinema.org/a/TtKu0LKG8Zz0Keh7
+
+### Brain-progression
+
+https://asciinema.org/a/f1TCy27F6EcdnyHg
+
+### Brain-prime
+
+https://asciinema.org/a/BuctJEPWdtykgwVz
