@@ -1,7 +1,5 @@
 import random
 
-from ..logic import *
-
 MIN_NUMBER = 1
 MAX_NUMBER = 99
 DESCRIPTION = "What is the result of the expression?"
@@ -24,10 +22,6 @@ def calc_question() -> int:
     print(f"Question: {number1} {calc_operator} {number2}")
     result = calc(number1, calc_operator, number2)
     return result
-
-def main() -> None:
-    name = ask_name()
-    game(name, DESCRIPTION, calc_question)
 
 
 

@@ -1,7 +1,5 @@
 import random
 
-from ..logic import *
-
 MIN_NUMBER = 1
 MAX_NUMBER = 99
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -15,10 +13,6 @@ def even_question() -> str:
     if is_even(number):
         return "yes"
     return "no"
-
-def main() -> None:
-    name = ask_name()
-    game(name, DESCRIPTION , even_question)
 
 
 

@@ -1,7 +1,5 @@
 import random
 
-from ..logic import *
-
 MIN_NUMBER = 1
 MAX_NUMBER = 99
 DESCRIPTION = "Find the greatest common divisor of given numbers."
@@ -13,15 +11,11 @@ def gcd(number1: int, number2: int) -> int:
         number2 = remain
     return number1
 
-def gcd_question():
+def gcd_question() -> int:
     number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
     number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     final_gcd = gcd(number1, number2)
     numbers = f"{number1} {number2}"
     print(f"Question: {numbers}")
     return final_gcd
-
-def main() -> None:
-    name = ask_name()
-    game(name, DESCRIPTION, gcd_question)
 

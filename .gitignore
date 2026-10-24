@@ -8,3 +8,13 @@ wheels/
 
 # Virtual environments
 .venv
+
+# IDE
+.idea/
+.vscode/
+
+# asciinema
+*.cast
+
+# linter cache
+.ruff_cache/
