@@ -1,5 +1,10 @@
 import random
-from .logic import *
+
+from ..logic import *
+
+MIN_NUMBER = 1
+MAX_NUMBER = 99
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number: int):
     if number < 2:
@@ -11,7 +16,7 @@ def is_prime(number: int):
     return True
 
 def prime_question():
-    number = random.randint(1,99)
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
     print(f"Question: {number}")
     if is_prime(number):
         return "yes"
@@ -19,4 +24,4 @@ def prime_question():
 
 def main() -> None:
     name = ask_name()
-    game(name, 'Answer "yes" if given number is prime. Otherwise answer "no".', prime_question)
+    game(name, DESCRIPTION, prime_question)

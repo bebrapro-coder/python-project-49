@@ -1,5 +1,12 @@
 import random
-from .logic import *
+
+from ..logic import *
+
+MIN_NUMBER = 1
+MAX_NUMBER = 99
+MIN_NUMBER2 = 0
+MAX_NUMBER2 = 9
+DESCRIPTION = "What number is missing in the progression?"
 
 def progression(first_number: int, step: int):
     numbers = [first_number]
@@ -14,9 +21,9 @@ def progression(first_number: int, step: int):
     return numbers
 
 def progression_question():
-    step = random.randint(1, 99)
-    first_number = random.randint(1, 99)
-    random_index = random.randint(0, 9)
+    step = random.randint(MIN_NUMBER, MAX_NUMBER)
+    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    random_index = random.randint(MIN_NUMBER2, MAX_NUMBER2)
     final_progression = progression(first_number, step)
     progression_answer = final_progression[random_index]
     final_progression[random_index] = ".."
@@ -27,4 +34,4 @@ def progression_question():
 
 def main() -> None:
     name = ask_name()
-    game(name,"What number is missing in the progression?", progression_question)
+    game(name, DESCRIPTION, progression_question)

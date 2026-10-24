@@ -9,20 +9,30 @@
 
 ## Стек
 
-- Python
+- Python 3.12+
+- uv
+- Ruff
+- Make
+- GitHub Actions
+- random
 
 ## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
 
 ```bash
 git clone https://github.com/bebrapro-coder/python-project-49.git
 cd python-project-49
+uv sync
+make build/uv build
+uv tool install --force dist/*.whl
 ```
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+### Примеры запуска
+
+uv run brain-games/brain-even/brain-calc/brain-gcd/brain-progression/brain-prime
+make brain-games/brain-even/brain-calc/brain-gcd/brain-progression/brain-prime
+brain-games/brain-even/brain-calc/brain-gcd/brain-progression/brain-prime
 
 ---
 
@@ -41,20 +51,20 @@ cd python-project-49
 
 ### Brain-even
 
-https://asciinema.org/a/VEU7Szc4HDIBETnw
+https://asciinema.org/a/EzwjxAwBgQE9GoOy
 
 ### Brain-calc
 
-https://asciinema.org/a/YeDn4S9YFUhmuqKF 
+https://asciinema.org/a/9fOAv4zcqmjV7sFc 
 
 ### Brain-gcd
 
-https://asciinema.org/a/TtKu0LKG8Zz0Keh7
+https://asciinema.org/a/TGFWroFxg6ntfVUo
 
 ### Brain-progression
 
-https://asciinema.org/a/f1TCy27F6EcdnyHg
+https://asciinema.org/a/Nkdf0ENB619ILvSa
 
 ### Brain-prime
 
-https://asciinema.org/a/BuctJEPWdtykgwVz
+https://asciinema.org/a/ySiSDCHJXEAmmwS6
