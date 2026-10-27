@@ -9,9 +9,8 @@ def is_even(number: int) -> bool:
     return number % 2 == 0
 
 
-def even_question() -> str:
+def even_question() -> tuple[str, str]:
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    print(f"Question: {number}")
-    if is_even(number):
-        return "yes"
-    return "no"
+    if not is_even(number):
+        return str(number), "no"
+    return str(number), "yes"

@@ -15,9 +15,8 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def prime_question() -> str:
+def prime_question() -> tuple[str, str]:
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    print(f"Question: {number}")
-    if is_prime(number):
-        return "yes"
-    return "no"
+    if not is_prime(number):
+        return str(number), "no"
+    return str(number), "yes"

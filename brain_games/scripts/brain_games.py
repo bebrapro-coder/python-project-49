@@ -1,8 +1,8 @@
-from ..logic import ask_name
+from ..logic import ask_name, welcome
 
 
 def main() -> None:
-    print("Welcome to the Brain Games!")
+    welcome()
     name = ask_name()
     print(f"Hello, {name}!")
 

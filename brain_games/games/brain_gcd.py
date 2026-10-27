@@ -13,10 +13,9 @@ def gcd(number1: int, number2: int) -> int:
     return number1
 
 
-def gcd_question() -> int:
+def gcd_question() -> tuple[str, str]:
     number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
     number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     final_gcd = gcd(number1, number2)
     numbers = f"{number1} {number2}"
-    print(f"Question: {numbers}")
-    return final_gcd
+    return numbers, str(final_gcd)

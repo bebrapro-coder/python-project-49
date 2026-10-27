@@ -1,10 +1,16 @@
+import prompt
+
 ROUNDS_COUNT = 3
+
+
+def welcome() -> None:
+    print("Welcome to the Brain Games!")
 
 
 def ask_name() -> str:
     name = ""
     while name == "":
-        name = input("May I have your name? ")
+        name = prompt.string("May I have your name? ")
     return name
 
 
@@ -14,7 +20,7 @@ def start(name: str, description: str) -> None:
 
 
 def answer() -> str:
-    result = input("Your answer: ")
+    result = prompt.string("Your answer: ")
     return result
 
 
@@ -28,10 +34,13 @@ def check_answer(name: str, correct: int | str, user_answer: str) -> bool:
         return False
 
 
-def game(name: str, description: str, question) -> None:
+def game(description: str, question) -> None:
+    welcome()
+    name = ask_name()
     start(name, description)
     for i in range(ROUNDS_COUNT):
-        correct = question()
+        question_text, correct = question()
+        print(f"Question: {question_text}")
         user_answer = answer()
         if not check_answer(name, correct, user_answer):
             return
